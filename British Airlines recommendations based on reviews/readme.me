@@ -1,1 +1,8 @@
-
+Dataset from Kaggle - https://www.kaggle.com/datasets/chaudharyanshul/airline-reviews/data
+I have implemented model with Sequintal API from Keras with Bidirectional GRU layer.
+For preprocessing I have used TextVectorization layer for making tokens as integer values and nltk NLP library, which have provided removing stop words from text.
+Cause the model proned to be overfitted, I have decided to use L2 penalization and Dropout layers to prevent overfitting.
+Results are not so bad, for training ~95%, validation ~85%, testing ~83%.
+F1-Score for 0 label - 0.86
+F1-Score for 1 label - 0.78
+Quite average results according to F1-Score, I will try to improve F1-Score for 1 label to improve overall model evauation results.
